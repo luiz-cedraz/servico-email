@@ -33,7 +33,6 @@ public class EmailController {
 
 	@GetMapping("/retrieve-email")
 	public ResponseEntity<List<EmailModel>> retrieveEmail() {
-		List<EmailModel> emails = emailService.retrieveEmail();
-		return new ResponseEntity<List<EmailModel>>(emails, HttpStatus.OK);
+		return new ResponseEntity<>(emailService.retrieveEmail(), HttpStatus.OK);
 	}
 }

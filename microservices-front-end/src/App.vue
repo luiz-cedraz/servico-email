@@ -15,6 +15,7 @@
   <nav class="navigation">
     <RouterLink class="butao" to="/">Home</RouterLink>
     <RouterLink class="butao" to="/products">Produtos</RouterLink>
+    <RouterLink class="butao" to="/emails">Emails</RouterLink>
   </nav>
   <RouterView />
 </template>
